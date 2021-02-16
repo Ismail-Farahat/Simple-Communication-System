@@ -64,7 +64,7 @@ if channel == 1
                 delta_1 = 2 * [1 zeros(1,size(t,2)-1)];
                 delta_2 = 0.5 * [zeros(1,size(t,2)/2) 1 zeros(1,size(t,2)/2-1)];
                 ch = delta_1 + delta_2;
-                % 2 delta(t) + 0.5 delta(t-(es/2))
+                % 2 delta(t) + 0.5 delta(t-(es/2)) ... this channel for echo sound
 end
 
 % Convolution the signal with impulse response in the channel
